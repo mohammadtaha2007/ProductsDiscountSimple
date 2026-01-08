@@ -16,4 +16,9 @@ if(product) {
     console.log("Product Found:", product.name);
     console.log("Original Price:", product.price);
     console.log("Discount:", product.discount + "%");
+
+    // Calculate after Counting Discount
+    let finalPrice = product.price - (product.price * product.discount / 100);
+    console.log("Final Price:", finalPrice);
+
 }
