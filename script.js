@@ -11,3 +11,9 @@ let userInput = prompt("Enter the product name:");
 
 // Finding Product
 let product = products.find(item => item.name.toLowerCase() === userInput.toLowerCase());
+
+if(product) {
+    console.log("Product Found:", product.name);
+    console.log("Original Price:", product.price);
+    console.log("Discount:", product.discount + "%");
+}
