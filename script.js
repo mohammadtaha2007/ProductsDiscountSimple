@@ -9,3 +9,5 @@ const products = [
 // Get Product Name From User Via Prompt
 let userInput = prompt("Enter the product name:");
 
+// Finding Product
+let product = products.find(item => item.name.toLowerCase() === userInput.toLowerCase());
