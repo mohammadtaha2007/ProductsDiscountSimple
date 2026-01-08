@@ -21,4 +21,15 @@ if(product) {
     let finalPrice = product.price - (product.price * product.discount / 100);
     console.log("Final Price:", finalPrice);
 
+    // Checking Availability
+    if(product.inStock) {
+        console.log("Status: Available ✅");
+        if(finalPrice < 100) {
+            console.log("Hurry! Cheap deal!");
+        }
+    } else {
+        console.log("Status: Out of Stock ❌");
+    }
+} else {
+    console.log("Product not found ❌");
 }
